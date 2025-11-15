@@ -1,0 +1,21 @@
+{
+  "architecture": {
+    "memory_structure": "unified",
+    "enable_mcu": false
+  },
+  "frequency": {
+    "unit": "GHz",
+    "host": 0.5,
+    "mcu": 0.5
+  },
+  "workload": {
+    "model": "gemma2-2B",
+    "attention_head": 8,
+    "scenario_id": 7,
+    "input_sequence_length": 128,
+    "output_sequence_length": 64,
+    "decoder_block": 26
+  },
+  "log_level": "debug",
+  "cycle_log_file": "partitioned.txt"
+}

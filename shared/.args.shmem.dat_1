@@ -1,0 +1,7 @@
+midap_wrapper
+/troyson_shmem_ib_1_2054417383
+/troyson_shmem_bi_1_2054417383
+relaxed_sync 1 
+sim_cache false 
+buffer_size 8192
+packet_sizes 1024

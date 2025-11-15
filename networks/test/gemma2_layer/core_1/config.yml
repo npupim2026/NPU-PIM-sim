@@ -1,0 +1,105 @@
+BACKEND:
+  CODE_SIZE: 4
+  REG_SIZE: 4
+DRAM:
+  ADDRESS_ALIGN: 4096
+  BUS_BANDWIDTH: 128
+  CAS: 21.875
+  CHANNEL_SIZE: 4
+  CLEAR_FRAME_MEM: false
+  COMM_TYPE: DMA
+  FREQUENCY: 1.6
+  INCLUDE_DRAM_WRITE: true
+  NUM_CHANNELS: 2
+  NUM_SLAVES: 2
+  OFFSET:
+    BUFFER: 2147483648
+    INPUT: 268435456
+    INSTRUCTION: 2281701376
+    OUTPUT: 402653184
+    SHARED: 0
+    WEIGHT_BIAS: 536870912
+  PAGE_DELAY: 18.75
+  PAGE_SIZE: 8192
+  REFRESH_DELAY: 198.125
+  REFRESH_PERIOD: 3905
+LATENCY:
+  LATENCY_TYPE: WORST
+LOGGING_CONFIG_DICT:
+  formatters:
+    complex:
+      format: '%(asctime)s %(levelname)s [%(name)s] [%(filename)s:%(lineno)d] - %(message)s'
+    simple:
+      format: '[%(name)s] %(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: simple
+      level: INFO
+    file:
+      class: logging.FileHandler
+      filename: error.log
+      formatter: simple
+      level: DEBUG
+  loggers:
+    debug:
+      level: DEBUG
+    gen:
+      level: DEBUG
+    op_sim:
+      level: DEBUG
+  root:
+    handlers:
+    - console
+    - file
+    level: INFO
+  version: 1
+MIDAP:
+  ALIGNMENT: 16
+  BMEM:
+    NUM_ENTRIES: 2048
+  BUS_POLICY: WMEM_FIRST
+  CONTROL_STRATEGY:
+    FILTER_LOAD: ONE
+    FIRST_LAYER: PAD
+    FMEM: INPUT_STATIONARY
+    GRAPH_TRANSFORMER: PROTOTYPE
+    L2_SPM_COMPILER: PROTOTYPE
+    LAYER_COMPILER: MIN_DRAM_ACCESS
+    LOCAL_MEMORY_COMPILER: PROTOTYPE
+    MAPPING_POLICY: LAYER_PIPE
+    WEIGHTED_SUM: true
+  CORE_ID: 1
+  EFFICENT_LOGIC: true
+  FMEM:
+    NUM: 8
+    NUM_ENTRIES: 131072
+  FUNCTIONAL_SIM: true
+  LUT:
+    NUM_ENTRIES: 256
+  PACKET_SIZE: 1024
+  PLOT_DIRECTORY: ./simulation_plot
+  REDUCTION:
+    NUM_ENTRIES: 1024
+  SYSTEM_WIDTH: 64
+  WMEM:
+    E_NUM_ENTRIES: 16384
+    NUM: 16
+    NUM_ENTRIES: 16384
+    USE_EXTENSION: true
+  WRITE_BUFFER:
+    NUM_ENTRIES: 16384
+MODEL:
+  ALLOW_ABSTRACT_DATA: true
+  DOT_DIRECTORY: ./graph
+  GENERATE_BLOCK_DOT: true
+  NUM_FRAMES: 1
+  QUANTIZED: true
+  REDUCTION_LOGIC: true
+  TILING_METHOD: null
+  TILING_OBJECTIVE: null
+  USE_TILING: false
+SYSTEM:
+  BANDWIDTH: 25.6
+  DATA_SIZE: 1
+  FREQUENCY: 500

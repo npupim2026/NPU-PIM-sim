@@ -1,0 +1,14 @@
+40,2,8192,192,Softmax_D_H0
+43,2,12288,192,Softmax_D_H1
+57,2,28672,192,Softmax_D_H2
+60,2,24576,192,Softmax_D_H3
+74,2,4096,192,Softmax_D_H4
+77,2,36864,192,Softmax_D_H5
+91,2,20480,192,Softmax_D_H6
+94,2,16384,192,Softmax_D_H7
+98,2,45056,2304,RMSNorm_D_post_attn
+99,2,49152,2304,D_residual_conn1
+100,2,53248,2304,RMSNorm_D_pre_mlp
+105,2,98304,2304,RMSNorm_D_post_mlp
+106,2,102400,2304,D_residual_conn2
+100,2,53248,2304,D_residual_conn2

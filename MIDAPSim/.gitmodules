@@ -1,0 +1,4 @@
+[submodule "software"]
+	path = software
+	url = http://caplab.snu.ac.kr/MIDAP/midap_compiler.git
+	branch = master

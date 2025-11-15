@@ -1,0 +1,27 @@
+{
+  "network" : [
+    {
+      "net_name" : "gemma2_layer_pim_offload",
+      "shared_offset" : "0x0", 
+      "input_offset" : "0x10000000", 
+      "output_offset" : "0x18000000",
+      "wb_offset" : "0x20000000",
+      "buf_offset" : "0x80000000",
+      "path" : "networks/test/",
+      "prefix" : "gemma2_layer",
+      "precompiled" : false
+    }
+  ],
+  // MIN_DRAM_ACCESS, HIDE_DRAM_LATENCY (default), DOUBLE_BUFFER
+  "layer_compiler" : "MIN_DRAM_ACCESS",
+  // 0 (default), 1, 2 (simulation level, small is more accurate and slow)
+  "midap_level" : 0,
+  "quantized": true,
+  "packet_size" : 1024,
+  "fmem_bank_num" : 8,
+  "fmem_bank_size" : 128,
+  "cim_num" : 16,
+  "wmem_size" : 16,
+  "ewmem_size" : 16,
+  "additional_flags" : "-fl PAD -i 1 -so"
+}

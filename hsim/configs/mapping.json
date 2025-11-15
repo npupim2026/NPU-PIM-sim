@@ -1,0 +1,99 @@
+{
+  "mapping" : {
+    "D_Q0" : "NPU",
+    "D_Q1" : "NPU",
+    "D_Q2" : "NPU",
+    "D_Q3" : "NPU",
+    "D_Q4" : "NPU",
+    "D_Q5" : "NPU",
+    "D_Q6" : "NPU",
+    "D_Q7" : "NPU",
+
+    "D_K0" : "NPU",
+    "D_K2" : "NPU",
+    "D_K4" : "NPU",
+    "D_K6" : "NPU",
+
+    "D_V0" : "NPU",
+    "D_V2" : "NPU",
+    "D_V4" : "NPU",
+    "D_V6" : "NPU",
+
+    "D_QK_T0" : "NPU",
+    "D_QK_T1" : "NPU",
+    "D_QK_T2" : "NPU",
+    "D_QK_T3" : "NPU",
+    "D_QK_T4" : "NPU",
+    "D_QK_T5" : "NPU",
+    "D_QK_T6" : "NPU",
+    "D_QK_T7" : "NPU",
+
+    "Softmax_D_H0" : "CPU",
+    "Softmax_D_H1" : "CPU",
+    "Softmax_D_H2" : "CPU",
+    "Softmax_D_H3" : "CPU",
+    "Softmax_D_H4" : "CPU",
+    "Softmax_D_H6" : "CPU",
+    "Softmax_D_H7" : "CPU",
+
+    "D_S_V0" : "NPU",
+    "D_S_V1" : "NPU",  
+    "D_S_V2" : "NPU",
+    "D_S_V3" : "NPU",
+    "D_S_V4" : "NPU",
+    "D_S_V5" : "NPU",
+    "D_S_V6" : "NPU",
+    "D_S_V7" : "NPU",
+
+    "D_MHA_out" : "NPU"
+  },
+
+   "layer_dependency": {
+    "D_Q0" : "D_Q0_RoPE",
+    "D_Q1" : "D_Q1_RoPE",
+    "D_Q2" : "D_Q2_RoPE",
+    "D_Q3" : "D_Q3_RoPE",
+    "D_Q4" : "D_Q4_RoPE",
+    "D_Q5" : "D_Q5_RoPE",
+    "D_Q6" : "D_Q6_RoPE",
+    "D_Q7" : "D_Q7_RoPE",
+
+    "D_K0" : "D_K0_RoPE",
+    "D_K2" : "D_K2_RoPE",
+    "D_K4" : "D_K4_RoPE",
+    "D_K6" : "D_K6_RoPE",
+
+    "D_V0" : "D_S_V0",
+    "D_V2" : "D_S_V2",
+    "D_V4" : "D_S_V4",
+    "D_V6" : "D_S_V6",
+
+    "D_QK_T0" : "D_QK_T0",
+    "D_QK_T1" : "D_QK_T1",
+    "D_QK_T2" : "D_QK_T2",
+    "D_QK_T3" : "D_QK_T3",
+    "D_QK_T4" : "D_QK_T4",
+    "D_QK_T5" : "D_QK_T5",
+    "D_QK_T6" : "D_QK_T6",
+    "D_QK_T7" : "D_QK_T7",
+
+    "Softmax_D_H0" : "D_S_V0",
+    "Softmax_D_H1" : "D_S_V1",
+    "Softmax_D_H2" : "D_S_V2",
+    "Softmax_D_H3" : "D_S_V3",
+    "Softmax_D_H4" : "D_S_V4",
+    "Softmax_D_H6" : "D_S_V5",
+    "Softmax_D_H7" : "D_S_V6",
+
+    "D_S_V0" : "NPU",
+    "D_S_V1" : "NPU",  
+    "D_S_V2" : "NPU",
+    "D_S_V3" : "NPU",
+    "D_S_V4" : "NPU",
+    "D_S_V5" : "NPU",
+    "D_S_V6" : "NPU",
+    "D_S_V7" : "NPU",
+
+    "D_MHA_out" : "NPU"
+   }
+}

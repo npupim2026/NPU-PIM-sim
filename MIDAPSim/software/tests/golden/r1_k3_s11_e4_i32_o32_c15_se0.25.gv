@@ -1,0 +1,11 @@
+digraph "r1_k3_s11_e4_i32_o32_c15_se0.25" {
+	Conv1 -> Stage0_Block00_Conv1 [label=Conv1]
+	Conv1 -> Stage0_Block00_Sum1 [label=Conv1]
+	Stage0_Block00_Conv1 -> Stage0_Block00_Mul1 [label=Stage0_Block00_Conv1]
+	Stage0_Block00_Conv1 -> Stage0_Block00_GlobalPool1 [label=Stage0_Block00_Conv1]
+	Stage0_Block00_GlobalPool1 -> Stage0_Block00_Conv2 [label=Stage0_Block00_GlobalPool1]
+	Stage0_Block00_Conv2 -> Stage0_Block00_Conv3 [label=Stage0_Block00_Conv2]
+	Stage0_Block00_Conv3 -> Stage0_Block00_Mul1 [label=Stage0_Block00_Conv3]
+	Stage0_Block00_Mul1 -> Stage0_Block00_Conv4 [label=Stage0_Block00_Mul1]
+	Stage0_Block00_Conv4 -> Stage0_Block00_Sum1 [label=Stage0_Block00_Conv4]
+}

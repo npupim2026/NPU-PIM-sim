@@ -1,0 +1,5 @@
+digraph r1_k3_s11_e4_i32_o32_c0_noskip {
+	Conv1 -> Stage0_Block00_Conv1 [label=Conv1]
+	Stage0_Block00_Conv1 -> Stage0_Block00_Conv2 [label=Stage0_Block00_Conv1]
+	Stage0_Block00_Conv2 -> Stage0_Block00_Conv3 [label=Stage0_Block00_Conv2]
+}

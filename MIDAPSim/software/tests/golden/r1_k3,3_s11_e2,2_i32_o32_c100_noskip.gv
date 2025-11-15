@@ -1,0 +1,9 @@
+digraph "r1_k3,3_s11_e2,2_i32_o32_c100_noskip" {
+	Conv1 -> Stage0_Block00_Conv1 [label=Conv1]
+	Conv1 -> Stage0_Block00_Conv3 [label=Conv1]
+	Stage0_Block00_Conv1 -> Stage0_Block00_Conv2 [label=Stage0_Block00_Conv1]
+	Stage0_Block00_Conv2 -> Stage0_Block00_Concat1 [label=Stage0_Block00_Conv2]
+	Stage0_Block00_Conv3 -> Stage0_Block00_Conv4 [label=Stage0_Block00_Conv3]
+	Stage0_Block00_Conv4 -> Stage0_Block00_Concat1 [label=Stage0_Block00_Conv4]
+	Stage0_Block00_Concat1 -> Stage0_Block00_Conv5 [label=Stage0_Block00_Concat1]
+}

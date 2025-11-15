@@ -1,0 +1,7 @@
+core_ids:
+- 1
+num_frames: 1
+quantized: true
+spm_config:
+  bank_size: 0
+  num_banks: 0
