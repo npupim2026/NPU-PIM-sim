@@ -3,6 +3,9 @@ This repository provides the full source code and configurations for the simulat
 
 We provide **timing simulations** based on user parameters.
 
+## Simulator Structure
+ ![image](./fig_simulator.jpg)
+
 ## Features
 - Cycle-accurate modeling of NPU, PIM, DRAM, NoC, and memory controllers
 - Unified vs. Partitioned DRAM–PIM configurations
